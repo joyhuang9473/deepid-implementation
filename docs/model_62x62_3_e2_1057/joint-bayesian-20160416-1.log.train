@@ -1,0 +1,98 @@
+```
+train_feature = '../data/62x62_3_e2_1057/feature_CASIA_Webface_1057.mat'
+train_label = '../data/62x62_3_e2_1057/label_CASIA_Webface_1057.mat'
+result_dir = '../result/62x62_3_e2_1057/'
+model = '/workspace/tools/deepid/model/62x62_3_e2_1057/snapshot/snapshot_iter_50000.caffemodel'
+deploy = '/workspace/tools/deepid/model/62x62_3_e2_1057/deploy_relu.prototxt'
+mean = '/workspace/datasets/CASIA-WebFace-custom/mean_1057_62x62.npy'
+```
+
+(73230, 160) (73230, 1)
+2016-04-16, 03:47:03  PCA training (n_components=150)...
+2016-04-16, 03:47:07  PCA done.
+Saving data to file(../result/62x62_3_e2_1057/pca_CASIA-WebFace.pkl). 
+(73230, 150)
+prepare done, maxNumberInOneClass= 646
+2016-04-16, 03:47:22  Iterations-0: 0.00565952162606
+Saving data to file(../result/62x62_3_e2_1057/G.pkl). 
+Saving data to file(../result/62x62_3_e2_1057/A.pkl). 
+2016-04-16, 03:47:27  Iterations-1: 0.00798690829054
+2016-04-16, 03:47:32  Iterations-2: 0.00805025164175
+2016-04-16, 03:47:37  Iterations-3: 0.00729897066059
+2016-04-16, 03:47:41  Iterations-4: 0.00609548943429
+2016-04-16, 03:47:46  Iterations-5: 0.00503469062588
+Saving data to file(../result/62x62_3_e2_1057/G.pkl). 
+Saving data to file(../result/62x62_3_e2_1057/A.pkl). 
+2016-04-16, 03:47:51  Iterations-6: 0.00431156488382
+Saving data to file(../result/62x62_3_e2_1057/G.pkl). 
+Saving data to file(../result/62x62_3_e2_1057/A.pkl). 
+2016-04-16, 03:47:55  Iterations-7: 0.00386325491761
+Saving data to file(../result/62x62_3_e2_1057/G.pkl). 
+Saving data to file(../result/62x62_3_e2_1057/A.pkl). 
+2016-04-16, 03:48:00  Iterations-8: 0.00342279701411
+Saving data to file(../result/62x62_3_e2_1057/G.pkl). 
+Saving data to file(../result/62x62_3_e2_1057/A.pkl). 
+2016-04-16, 03:48:05  Iterations-9: 0.00286836707335
+Saving data to file(../result/62x62_3_e2_1057/G.pkl). 
+Saving data to file(../result/62x62_3_e2_1057/A.pkl). 
+2016-04-16, 03:48:10  Iterations-10: 0.00231825314386
+Saving data to file(../result/62x62_3_e2_1057/G.pkl). 
+Saving data to file(../result/62x62_3_e2_1057/A.pkl). 
+2016-04-16, 03:48:14  Iterations-11: 0.00213767151251
+Saving data to file(../result/62x62_3_e2_1057/G.pkl). 
+Saving data to file(../result/62x62_3_e2_1057/A.pkl). 
+2016-04-16, 03:48:19  Iterations-12: 0.00209197148281
+Saving data to file(../result/62x62_3_e2_1057/G.pkl). 
+Saving data to file(../result/62x62_3_e2_1057/A.pkl). 
+2016-04-16, 03:48:24  Iterations-13: 0.00195234804111
+Saving data to file(../result/62x62_3_e2_1057/G.pkl). 
+Saving data to file(../result/62x62_3_e2_1057/A.pkl). 
+2016-04-16, 03:48:29  Iterations-14: 0.00171075844117
+Saving data to file(../result/62x62_3_e2_1057/G.pkl). 
+Saving data to file(../result/62x62_3_e2_1057/A.pkl). 
+2016-04-16, 03:48:33  Iterations-15: 0.00160150720948
+Saving data to file(../result/62x62_3_e2_1057/G.pkl). 
+Saving data to file(../result/62x62_3_e2_1057/A.pkl). 
+2016-04-16, 03:48:38  Iterations-16: 0.00145217872152
+Saving data to file(../result/62x62_3_e2_1057/G.pkl). 
+Saving data to file(../result/62x62_3_e2_1057/A.pkl). 
+2016-04-16, 03:48:43  Iterations-17: 0.00145006257201
+Saving data to file(../result/62x62_3_e2_1057/G.pkl). 
+Saving data to file(../result/62x62_3_e2_1057/A.pkl). 
+2016-04-16, 03:48:48  Iterations-18: 0.00153270863751
+2016-04-16, 03:48:53  Iterations-19: 0.00137067109936
+Saving data to file(../result/62x62_3_e2_1057/G.pkl). 
+Saving data to file(../result/62x62_3_e2_1057/A.pkl). 
+2016-04-16, 03:48:57  Iterations-20: 0.00116244254928
+Saving data to file(../result/62x62_3_e2_1057/G.pkl). 
+Saving data to file(../result/62x62_3_e2_1057/A.pkl). 
+2016-04-16, 03:49:02  Iterations-21: 0.000660427436844
+Saving data to file(../result/62x62_3_e2_1057/G.pkl). 
+Saving data to file(../result/62x62_3_e2_1057/A.pkl). 
+2016-04-16, 03:49:07  Iterations-22: 0.000384929254594
+Saving data to file(../result/62x62_3_e2_1057/G.pkl). 
+Saving data to file(../result/62x62_3_e2_1057/A.pkl). 
+2016-04-16, 03:49:12  Iterations-23: 0.000454416743297
+2016-04-16, 03:49:16  Iterations-24: 0.00056554957867
+2016-04-16, 03:49:21  Iterations-25: 0.000714053789018
+2016-04-16, 03:49:26  Iterations-26: 0.00089555087794
+2016-04-16, 03:49:30  Iterations-27: 0.00104819371054
+2016-04-16, 03:49:35  Iterations-28: 0.000977013998515
+2016-04-16, 03:49:40  Iterations-29: 0.000695076979122
+2016-04-16, 03:49:44  Iterations-30: 0.000727990980035
+2016-04-16, 03:49:49  Iterations-31: 0.000854477131459
+2016-04-16, 03:49:54  Iterations-32: 0.000871260398928
+2016-04-16, 03:49:58  Iterations-33: 0.000751153788291
+2016-04-16, 03:50:03  Iterations-34: 0.000826747382251
+2016-04-16, 03:50:08  Iterations-35: 0.000911528468973
+2016-04-16, 03:50:13  Iterations-36: 0.000684365920278
+2016-04-16, 03:50:17  Iterations-37: 0.000206941713437
+Saving data to file(../result/62x62_3_e2_1057/G.pkl). 
+Saving data to file(../result/62x62_3_e2_1057/A.pkl). 
+2016-04-16, 03:50:22  Iterations-38: 1.18068322487e-05
+Saving data to file(../result/62x62_3_e2_1057/G.pkl). 
+Saving data to file(../result/62x62_3_e2_1057/A.pkl). 
+2016-04-16, 03:50:27  Iterations-39: 5.02731491188e-07
+Convergence:  39 5.02731491188e-07
+Saving data to file(../result/62x62_3_e2_1057/G_con.pkl). 
+Saving data to file(../result/62x62_3_e2_1057/A_con.pkl). 
