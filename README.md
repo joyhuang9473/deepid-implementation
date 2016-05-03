@@ -5,6 +5,8 @@ DeepID-implementation
 
 DeepID-implementation is an implementation of paper "[Deep Learning Face Representation from Predicting 10,000 Classes](http://mmlab.ie.cuhk.edu.hk/pdf/YiSun_CVPR14.pdf)", which proposes to learn a set of compact, 160-dims high level feature representations through deep learning, referred to as Deep hidden IDentity features (DeepID), for face verification.
 
+More details in [DeepID Notebook](http://goo.gl/4Pvw8S).
+
 Dataset
 -----------------------
 
@@ -54,3 +56,20 @@ with Joint Bayesian, Cosine Similarity, Euclidean Distance method.
 |62x62_3_e2_4230|0.66|0.793167|0.756833|
 |62x62_3_e2_8460|0.66|0.7985|0.757|
 |62x62_3_e1_conventional|0.64|0.797667|0.763167|
+
+Reference
+-----------------------
+
+[1]. Yi Sun, Xiaogang Wang, Xiaoao Tang, [Deep Learning Face Representation from Predicting 10,000 Classes](http://mmlab.ie.cuhk.edu.hk/pdf/YiSun_CVPR14.pdf), 2014-06-23
+
+[2]. RiweiChen, [Caffe实践-基于Caffe的人脸识别实现](http://blog.csdn.net/chenriwei2/article/details/49500687), 2015-11-01
+
+[3]. RiweiChen, [深度学习论文笔记-Deep Learning Face Representation from Predicting 10,000 Classes](http://blog.csdn.net/chenriwei2/article/details/31415069), 2014-06-16
+
+[4]. 張雨石, [DeepID人脸识别算法之三代](http://blog.csdn.net/stdcoutzyx/article/details/42091205), 2014-12-23
+
+[5]. RiweiChen, [RiweiChen/DeepFace](https://github.com/RiweiChen/DeepFace), 2016-04-14
+
+[6]. Feng Wang, [happynear/FaceVerification](https://github.com/happynear/FaceVerification), 2016-04-25
+
+[7]. Alfred Xiang Wu, [AlfredXiangWu/face_verification_experiment](https://github.com/AlfredXiangWu/face_verification_experiment), 2015-12-14
