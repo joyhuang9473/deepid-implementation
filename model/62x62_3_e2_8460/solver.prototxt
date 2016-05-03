@@ -1,0 +1,18 @@
+net: "/workspace/tools/deepid/model/62x62_3_e2_8460/train_val.prototxt"
+test_iter: 215
+test_interval: 1000
+
+base_lr: 0.01
+lr_policy: "step"
+gamma: 0.95
+stepsize: 100000
+momentum: 0.9
+weight_decay: 0.0005
+
+display: 100
+max_iter: 400100
+snapshot: 50000
+snapshot_prefix: "/workspace/tools/deepid/model/62x62_3_e2_8460/snapshot/snapshot"
+solver_mode: GPU
+device_id:0
+#debug_info: true
