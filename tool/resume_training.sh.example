@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+TOOLS=/opt/caffe/build/tools
+GLOG_logtostderr=0
+GLOG_log_dir=/workspace/tools/deepid/log/62x62_3_e2_8460 \
+$TOOLS/caffe train \
+    --solver=/workspace/tools/deepid/model/62x62_3_e2_8460/solver.prototxt \
+    --snapshot=/workspace/tools/deepid/model/62x62_3_e2_8460/snapshot/snapshot_iter_400000.solverstate

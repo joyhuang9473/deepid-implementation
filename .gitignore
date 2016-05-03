@@ -1,1 +1,6 @@
 .*
+tool/create_db.sh
+tool/div_dataset.py
+tool/make_mean.sh
+tool/resume_training.sh
+tool/train.sh

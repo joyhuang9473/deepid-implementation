@@ -1,0 +1,72 @@
+# -*- coding: utf-8 -*-
+"""
+reference: https://github.com/RiweiChen/DeepFace/blob/master/FaceDetection/baseline/convert_data_lmdb.sh
+@brief: 用与划分训练数据，train.list 和 val.list
+@author: Riwei Chen <Riwei.Chen@outlook.com>
+"""
+
+import os
+import sys
+
+def div_database(filepath, savepath, top_num = 1000, equal_num = False):
+    '''
+    @brief: 提取webface人脸数据
+    @param : filepath 文件路径
+    @param : top_num=1000,表示提取的类别数目
+    @param : equal_num 是否强制每个人都相同
+    '''
+    dirlists = os.listdir(filepath)
+    dict_id_num = {}
+
+    for subdir in dirlists:
+        dict_id_num[subdir] = len(os.listdir(os.path.join(filepath, subdir)))
+    #sorted(dict_id_num.items, key=lambda dict_id_num:dict_id_num[1])
+    sorted_num_id = sorted([(v, k) for k, v in dict_id_num.items()], reverse = True)
+    select_ids = sorted_num_id[0:top_num]
+
+    '''
+    Create train/val list file
+    '''
+    if equal_num == True:
+        trainfile = savepath + 'train_' + str(top_num) + '_equal_.list'
+        valfile = savepath + 'val_' + str(top_num) + '_qeual.list'
+    else:
+        trainfile = savepath + 'train_' + str(top_num) + '.list'
+        valfile = savepath + 'val_' + str(top_num) + '.list'
+
+    fid_train = open(trainfile, 'w')
+    fid_val = open(valfile, 'w')
+    pid = 0
+
+    for select_id in select_ids:
+        subdir = select_id[1]
+        filenamelist = os.listdir(os.path.join(filepath, subdir)) 
+        num = 1
+
+        for filename in filenamelist:
+            #print select_ids[top_num-1]
+            if (equal_num == True) and (num > select_ids[top_num-1][0]):
+                break
+            if num%10 != 0:
+                fid_train.write(os.path.join(subdir, filename) + '\t' + str(pid) + '\n')
+            else:
+                fid_val.write(os.path.join(subdir, filename) + '\t' + str(pid) + '\n')
+
+            num = num + 1
+
+        pid=pid+1
+
+    fid_train.close()
+    fid_val.close()
+
+if __name__ == '__main__':
+    if len(sys.argv) != 4:
+    print "Usage: python div_dataset.py data_path save_path top_num equal_num"
+    sys.exit()
+
+    data_path = sys.argv[1]
+    save_path = sys.argv[2]
+    top_num = sys.argv[3]
+    equal_num = sys.argv[4]
+
+    div_database(data_path, save_path, top_num, equal_num)
