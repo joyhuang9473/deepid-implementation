@@ -5,14 +5,16 @@ DeepID-implementation
 
 DeepID-implementation is an implementation of paper "[Deep Learning Face Representation from Predicting 10,000 Classes](http://mmlab.ie.cuhk.edu.hk/pdf/YiSun_CVPR14.pdf)", which proposes to learn a set of compact, 160-dims high level feature representations through deep learning, referred to as Deep hidden IDentity features (DeepID), for face verification.
 
-### Dataset ###
+Dataset
+-----------------------
 
 |Dataset|People|Image|Size|
 | ----|----|----- |----- |
 |CASIA-WebFace-custom|10,575|392,304|62x62|
 |LFW|6,000 pairs| |62x62|
 
-### Train, Test Model ###
+Train, Test Model
+-----------------------
 
 |Model|People|Training images|Validation images|Train|Test|
 | ----|----|----- |----- |----- |----- |
@@ -24,7 +26,8 @@ DeepID-implementation is an implementation of paper "[Deep Learning Face Represe
 |62x62_3_e2_8460|8,460|284,466|27,498|[train](http://goo.gl/0Yhq07)|[test](http://goo.gl/t4KXwg)|
 |62x62_3_e1_conventional|8,460|284,466|27,498|[train](http://goo.gl/4Rh652)|[test](http://goo.gl/ZsQYGB)|
 
-### Experiments ###
+Experiments
+-----------------------
 
 - The classification ability of Multi-scale ConvNets
     - [\[paper\]](http://goo.gl/4Pvw8S#D.5.1.1-The-classification-ability-of-Multi-scale-ConvNets) | [\[model_62x62_3\]](http://goo.gl/r66owt)
@@ -37,7 +40,8 @@ DeepID-implementation is an implementation of paper "[Deep Learning Face Represe
 - Method comparison
     - [\[paper\]](http://goo.gl/4Pvw8S#D.5.1.5-Method-comparison) | [\[model_62x62_3\]](http://goo.gl/9MX9Tl)
 
-### Test accuracy on LFW ###
+Test accuracy on LFW
+-----------------------
 
 with Joint Bayesian, Cosine Similarity, Euclidean Distance method.
 
